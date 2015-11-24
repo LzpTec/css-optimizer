@@ -5,7 +5,7 @@
 [![Total Downloads](https://poser.pugx.org/lastzero/css-optimizer/downloads.svg)](https://packagist.org/packages/lastzero/css-optimizer)
 [![License](https://poser.pugx.org/lastzero/css-optimizer/license.svg)](https://packagist.org/packages/lastzero/css-optimizer)
 
-Minifies stylesheets by removing duplicates and combining selectors - mostly safe and very efficient. This package was developed to optimize the CSS of an existing commercial Web site, as the CSS contained many duplicates and similar selectors created by [sass](http://sass-lang.com/). 
+Minifies stylesheets by removing duplicates and combining selectors - mostly safe and very efficient. This package was developed to optimize the CSS of an existing commercial Web site, as the CSS contained many duplicates and similar selectors created by the [Sass](http://sass-lang.com/) CSS precompiler (I don't want to blame Sass, but that's the story). 
 
 Input:
 
