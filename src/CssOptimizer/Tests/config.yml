@@ -1,0 +1,3 @@
+services:
+    assetic.css_optimize_filter:
+        class: \CssOptimizer\Assetic\Filter\CssOptimizeFilter
