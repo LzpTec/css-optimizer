@@ -32,3 +32,5 @@ Usage:
     
     $minifiedCss = $optimizer->minifyCss($inputCss);
     $optimizedCss = $optimizer->optimizeCss($minifiedCss);
+    
+    print_r($optimizer->getCounts());
