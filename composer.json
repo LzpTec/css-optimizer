@@ -2,8 +2,8 @@
     "name": "lastzero/css-optimizer",
     "type": "library",
     "description": "CSS Optimizer - Minifies stylesheets by removing duplicates and combining selectors",
-    "keywords": ["form","validation","input","symfony","silex"],
-    "homepage": "https://github.com/lastzero/php-input-validation",
+    "keywords": ["css","optimization","minification","assetic","symfony"],
+    "homepage": "https://github.com/lastzero/css-optimizer",
     "license": "MIT",
     "authors": [
         {
