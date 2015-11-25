@@ -6,7 +6,7 @@ use TestTools\TestCase\UnitTestCase;
 use CssOptimizer\Css\Optimizer;
 
 /**
- * @author Michael Mayer <michael@liquidbytes.net>
+ * @author Michael Mayer <michael@lastzero.net>
  * @package CssOptimizer
  * @license MIT
  */
