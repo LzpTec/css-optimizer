@@ -6,7 +6,7 @@
 
 Minifies stylesheets by removing duplicates and combining selectors - mostly safe and very efficient. This package was developed as a  "quick win" to optimize the CSS of an existing commercial Web site, as the CSS contained many duplicates and similar selectors created by the [Sass](http://sass-lang.com/) CSS precompiler.
 
-*Note: The optimization is performed using string functions - it's not a real CSS parser. If you do super fancy stuff in your CSS, it might potentially break (you'll notice it, don't worry). In that case, please send a pull request with a fix.*
+*Note: The optimization is performed using simple (and fast) string functions - it's not a real CSS parser. It requires well formed CSS without inline comments (don't worry, you can use the minifyCss() method for that, see usage).*
 
 *Warning: The order of selectors in your CSS does play a role and the "further down" one does in fact win when the specificity values are exactly the same. If your CSS relies on order to work, this optimization will obviously break it. See also https://en.wikipedia.org/wiki/Cascading_Style_Sheets#Specificity*
 
@@ -34,3 +34,16 @@ Usage:
     $optimizedCss = $optimizer->optimizeCss($minifiedCss);
     
     print_r($optimizer->getCounts());
+    
+
+Assetic filter
+--------------
+
+This library comes with a ready-to-use Assetic filter (for Symfony2). Please use a pre-filter like CssMinFilter.
+
+Usage:
+
+    $filter = new \CssOptimizer\Assetic\Filter\CssOptimizeFilter;
+    $asset = new StringAsset($inputCss);
+    $asset->ensureFilter($filter);
+    $outputCss = $asset->dump();
