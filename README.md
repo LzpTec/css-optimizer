@@ -47,3 +47,13 @@ Usage:
     $asset = new StringAsset($inputCss);
     $asset->ensureFilter($filter);
     $outputCss = $asset->dump();
+
+
+Composer
+--------
+
+If you are using composer, simply add "lastzero/css-optimizer" to your composer.json file to use this library:
+
+    "require": {
+        "lastzero/css-optimizer": "*"
+    }
