@@ -52,7 +52,7 @@ Usage:
 Composer
 --------
 
-If you are using composer, simply add "lastzero/css-optimizer" to your composer.json file to use this library:
+If you are using composer, simply add "lastzero/css-optimizer" to your composer.json file and run `composer update`:
 
     "require": {
         "lastzero/css-optimizer": "*"
