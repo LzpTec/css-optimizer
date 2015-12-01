@@ -4,7 +4,7 @@
 [![Latest Stable Version](https://poser.pugx.org/lastzero/css-optimizer/v/stable.svg)](https://packagist.org/packages/lastzero/css-optimizer)
 [![License](https://poser.pugx.org/lastzero/css-optimizer/license.svg)](https://packagist.org/packages/lastzero/css-optimizer)
 
-Minifies stylesheets by removing duplicates and combining selectors - mostly safe and very efficient. This package was developed as a  "quick win" to optimize the CSS of an existing commercial Web site, as the CSS contained many duplicates and similar selectors created by a CSS precompiler.
+Minifies stylesheets by removing duplicates and combining selectors - mostly safe and very efficient. This package was developed as a  "quick win" to optimize the CSS of an existing commercial Web site, as the CSS contained many duplicates and similar selectors created by a CSS precompiler. It was published in the hope to help others in the same situation.
 
 *Note: The optimization is performed using simple (and fast) string functions - it's not a real CSS parser. It requires well formed CSS without inline comments (don't worry, you can use the minifyCss() method for that, see usage).*
 
@@ -47,3 +47,13 @@ Usage:
     $asset = new StringAsset($inputCss);
     $asset->ensureFilter($filter);
     $outputCss = $asset->dump();
+
+
+Composer
+--------
+
+If you are using composer, simply add "lastzero/css-optimizer" to your composer.json file and run `composer update`:
+
+    "require": {
+        "lastzero/css-optimizer": "*"
+    }
